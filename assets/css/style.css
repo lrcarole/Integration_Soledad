@@ -1,0 +1,611 @@
+
+/*-------------------- FONTS---------------------------------*/
+@font-face {
+	font-family: 'PlayfairDisplay-Bold';
+	src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+	font-family: 'PT_Serif-Web-BoldItalic';
+	src: url("../fonts/PT_Serif/PT_Serif-Web-BoldItalic.ttf");
+}
+
+@font-face {
+	font-family: 'PT_Serif-Web-Black';
+	src: url("../fonts/PT_Serif/PT_Serif-Web-Black.ttf");
+}
+
+@font-face {
+	font-family: 'PT_Serif-Web-Bold';
+	src: url("../fonts/PT_Serif/PT_Serif-Web-Bold.ttf");
+}
+
+@font-face {
+	font-family: 'PT_Serif-Web-Regular';
+	src: url("../fonts/PT_Serif/PT_Serif-Web-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Lato-Italic';
+	src: url("../fonts/Lato/Lato-Italic.ttf");
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/fonts/FontAwesome.otf");
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../fonts/FontAwesome/FontAwesome.otf");
+}
+
+/*---------------------HTML ET BODY--------------------------*/
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*---------------------BARRE DE NAVIGATION --------------------------*/
+
+nav {
+	height: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #212121;
+	font-family: 'PlayfairDisplay-Bold', serif;
+	font-size: 12px;
+}
+
+.nav {
+	width: 1170px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	flex-direction: row;
+	list-style-type: none;
+	line-height: 60px;
+	padding-left: 0px;
+	padding-right: 45px;
+}
+
+nav a {
+	color: #999999;
+
+}
+
+nav a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 2px solid #ffffff;
+}
+
+nav a:visited {
+		color: #999999;
+		text-decoration: none;
+}
+
+nav .active {
+	color: #ffffff;
+}
+
+.menu {
+	float: left;
+}
+.search {
+	line-height: 60px;
+	float: right;
+	padding-right: 5px;
+	font-size: 16px;
+}
+
+
+h2 {
+	font-family: 'PT_Serif-Web-BoldItalic', Serif;
+}
+
+h3 {
+	font-family: 'PlayfairDisplay-Bold', Serif;
+}
+
+h4 {
+	font-family: 'PlayfairDisplay-Bold', Serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+/*--------------------------- HEADER -----------------------------*/
+header {
+	width:100%;
+	height: 230px;
+	background-color: #fafafa;
+}
+
+header h2 {
+	font-family: 'PT_Serif-Web-BoldItalic', Serif;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+header h2::before, header h2::after {
+	position: absolute;
+	overflow: hidden;
+	content: "";
+	background-color: #DEDEDE;
+	width: 60px;
+	height: 1px;
+	top:51%;
+
+}
+
+header h2::before {
+	margin-left: -7%;
+}
+
+header h2::after {
+	margin-left: 2%;
+}
+
+header img {
+	width:430px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+}
+
+.logo-top {
+	margin: auto;
+}
+
+/*------------------------- CAROUSSEL ----------------------------*/
+.caroussel{
+	width: 100%;
+	height: 560px;	overflow: hidden;
+	background-image: url("../img/fashion-girl.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 60px;
+}
+
+.caroussel img{
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	position: relative;
+}
+
+.caroussel .date{
+	width: 120px;
+	height: 30px;
+	margin: -20px auto 0 auto;
+	color: white;
+	background-color: black;
+	line-height: 32px;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+}
+
+.car_text{
+	margin: 200px auto 0 auto;
+	width: 480px;
+	height: 160px;
+	background-color: white;
+	padding-top: 5px;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+/*---------------------------- BODY ------------------------------*/
+section{
+	padding: 0 auto;
+	text-align: center;
+}
+
+.art_img{
+	width: 100%;
+	height: 370px;
+	position: relative;
+	overflow: hidden;
+}
+
+.art_img img{
+	position: absolute;
+	top: -50%;
+}
+
+.categorie{
+	margin: 28px 0 15px 0;
+}
+
+.categorie a{
+	color: #a60505;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.categorie a:hover{
+	text-decoration: underline;
+}
+
+.title{
+ 	margin-bottom: 15px;
+}
+
+.title a{
+	color: #313131;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: "Playfair Display";
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.title a:hover{
+	color: #999999;
+	text-decoration: none;
+}
+
+.sub_title{
+	color: #888888;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+.author{
+	font-style: italic;
+}
+
+.author a{
+	color: black;
+}
+
+.author a:hover{
+	color: #a60505;
+	text-decoration: none;
+}
+
+.seperation{
+	width: 60px;
+	height: 1px;
+	margin: 0 auto;
+	display: block;
+	background-color: #a60505;
+}
+
+.text{
+	text-align: left;
+	font-size: 14px;
+	line-height: 27px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+}
+.art_social ul li{
+	margin-right: 10px;
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 35px;
+}
+
+.art_social ul li:hover{
+	color: #a60505;
+}
+
+.art_social::before{
+	content: "";
+	overflow: hidden;
+	background-color: #999999;
+	width: 100%;
+	height: 1px;
+	top:50%;
+}
+
+.art_social::after{
+	content: "";
+	overflow: hidden;
+	background-color: #999999;
+	width: 100%;
+	height: 1px;
+	top:50%;
+}
+
+/*--------------------------- FOOTER -----------------------------*/
+
+.container {
+	margin: auto;
+}
+
+.footer {
+	width: 1170px;
+	height: 550px;
+	margin-right: 10px;
+}
+
+.footer h3 {
+	font-size: 16px;
+	color: #313131;
+	border-bottom: 4px double #313131;
+	padding-bottom: 20px;
+}
+
+.img-responsive{
+	width: 100%;
+}
+
+.about-me, .recent-posts, .insta-slider {
+	max-width: 390px;
+	margin-top: 50px;
+}
+
+/*-------------------------- ABOUT ME -----------------------------*/
+
+.about-me img {
+	padding-top: 12px;
+	padding-bottom: 20px;
+}
+
+.about-me p {
+	line-height: 170%;
+}
+
+
+
+/*-------------------------- RECENT POSTS -----------------------------*/
+
+.recent-posts .img {
+	margin-top: 12px;
+	width: 121px; 
+	height: 82px;
+	background-size: cover;
+}
+
+.recent-posts .img:hover {
+	filter: opacity(70%);
+	transition-delay: 0.1s;
+	transition-duration: 0.4s;
+}
+
+.recent-posts h4 {
+	padding-left: 10px;
+}
+
+.recent-posts h4 a {
+	font-size: 16px;
+	color: #313131;
+	font-family: 'PlayfairDisplay-Bold', Serif;
+}
+
+.recent-posts h4 a:hover {
+	color: #A60505;
+	text-decoration: none;
+	}
+
+.recent-posts .date2 {
+	color: #888888;
+	font-family: 'Lato', sans-serif;
+	padding-left: 10px;
+}
+
+.recent-posts row {
+	width: 100%;
+}
+
+.recent1, .recent2, .recent3 {
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+.recent1, .recent2 {
+	border-bottom: 1px solid #DEDEDE;
+	padding-bottom: 18px;
+}
+
+/*--------------------------- INSTAGRAM SLIDER -----------------------------*/
+
+.insta-slider img {
+	padding-top: 12px;
+	max-height: 363px;
+}
+
+/*--------------------------- PHOTOS INSTAGRAM -----------------------------*/
+.barre-insta * {
+	margin: 0px;
+	padding: 0px;
+}
+
+.pic-insta {
+	width: 100%;
+	height: 231px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.pic-insta ul {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	z-index: 1;
+}
+
+.pic-insta li {
+	width: 12.2%;
+	height: 231px;
+	margin: 0px;
+	padding: 0px; 
+	position: relative;
+}
+
+.pic-insta img {
+	height: 229px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+.list-inline {
+	margin: 0px;
+	padding: 0px;
+}
+
+.barre-insta .col-lg-12 {
+	min-height: 0px;
+}
+
+/*.pic-insta .img-responsive {
+	margin: 0px;
+	padding: 0px;
+}*/
+
+/*--------------------------- ME ON INSTAGRAM -----------------------------*/
+.me-on-insta {
+	width: 172px;
+	height: 52px;
+	background-color: #ffffff;
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -140px;
+
+}
+
+.me-on-insta h4 {
+	font-size: 12px;
+	color: #313131;
+	text-align: center;
+	line-height: 52px;
+	letter-spacing: 1px;
+}
+
+/*------------------------- BARRE RESEAUX SOCIAUX ---------------------------*/
+
+.social-links {
+	height: 97px;
+}
+
+.social-links a {
+	color: #999999;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'PlayfairDisplay-Bold';
+	padding-right: 10px;
+}
+
+.social-links ul {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.social-links li {
+	padding-right: 20px;
+	padding-left: 20px;
+	line-height: 97px;
+	flex-direction: row;
+	list-style: none;
+	border-bottom: 1px solid #999999;
+	
+}
+.social-links a:hover {
+	color: #ffffff;
+}
+
+.social-links span {
+	padding-left: 10px;
+}
+
+.social-links span:hover {
+	color: #ffffff;
+}
+.social-links .fa {
+	width: 36px;
+	height: 36px;
+	border: 1px solid #999999;
+	border-radius: 100%;
+	padding: 11px;
+
+}
+
+.social-links .fa:hover {
+	color: #313131;
+	background-color: #ffffff;
+	
+}
+/*------------------------- LOGO DU FOOTER ET COPYRIGHT  -----------------------*/
+.logo-inv {
+	max-height: 325px;
+	background-color: #212121;
+	margin: auto;
+}
+
+.logo-copy {
+	margin: auto;
+	height: 208px;
+}
+
+.logo-copy img {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	max-width: 370px;
+}
+
+.logo-copy p {
+	color:#999999;
+	font-family: 'Lato-Italic', sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+.brightness {
+	filter: brightness(6);
+}
+
+/*------------------------- BACK TO TOP  -----------------------*/
+
+.back {
+	/*justify-content: center;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	font-family: 'Lato-Bold', sans-serif;
+	font-size: 14px;
+	text-align: center;
+
+}
+
+.back a {
+	color: #999999;
+	text-decoration: none;
+}
+
+.back a:hover {
+	color:  #ffffff;
+}
